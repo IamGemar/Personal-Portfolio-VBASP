@@ -1,0 +1,146 @@
+#app{
+    background-color: aliceblue;
+}
+#header{
+    width: 98.8%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1030;
+}
+.nav-link.active {
+  border-bottom: 3px solid #0d6efd;
+  font-weight: bold;
+}
+.nav-link:hover {
+  border-bottom:3px solid #0d6efd;
+}
+
+.Home{
+    
+    margin-top: 95px;
+    p{
+        text-align: justify;
+    }
+}
+.myname{
+    font-size: 3.6rem;
+}
+.aboutMe,.skillText,#galleryText,#projectText,#ContactText,#BlogsText{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+#About{
+    width: 96.8dvw;
+    height: auto;
+}
+#info{
+    height: auto;
+    p{
+        font-size: 1.6rem;
+    }
+}
+.grr{
+    height: 85px;
+}
+#Projects{
+    background: rgba(255, 251, 251, 0.7);
+}
+.project-item{
+    max-width: 25rem;
+    width: 100%;
+}
+#Gallery{
+    img{
+        height: 220px;
+        object-fit: cover;
+    }
+}
+.globalShadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+.shadow-2{
+    box-shadow: 
+  inset 2px 2px 7px 0 rgb(255, 249, 249,0.8), 
+  inset 2px 3px 7px 0 rgba(0,0,0,0.5);
+}
+.progress{
+    height: 25px !important;
+}
+#message.form-control{
+    height: 120px !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(100%) saturate(1000%) hue-rotate(200deg);
+}
+.carousel-indicators {
+  filter: invert(100%) sepia(100%) saturate(1000%) hue-rotate(200deg);
+  bottom: -50px;
+}
+.carousel {
+  padding-bottom: 60px;
+}
+@media (max-width:991px){
+    .myname{
+        font-size: 3.4rem;
+    }
+    #hero-image{
+        max-width: 410px;
+        max-height: 410px;
+    }
+    .aboutMe,.skillText,#projectText,#ContactText,#BlogsText{
+        font-size: 2.2rem;
+    }
+    .div-contact > img{
+        max-width: 38px !important;
+    }
+    .div-infotext{
+        h3{
+            font-size: 1.3rem !important;
+        }
+        p{
+            font-size: 1rem !important;
+        }
+    }
+}
+.card-blog{
+    height: 480px !important;
+}
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+a:hover{
+    text-decoration: #0d6efd !important;
+    color: blue !important;
+}
+@media(max-width:805px){
+    #hero-image{
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+@media (max-width:506px) {
+    #hero-image{
+        max-width: 370px;
+        max-height: 370px;
+    }
+    .myname{
+        font-size: 3rem;
+    }
+    .aboutMe,.skillText,#projectText,#ContactText,#BlogsText{
+        font-size: 1.8rem;
+    }
+    .div-flex{
+        h3{
+            font-size: 1.2rem !important;
+        }
+        p{
+            font-size: 1rem !important;
+        }
+    }
+}

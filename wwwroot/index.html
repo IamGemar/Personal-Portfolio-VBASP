@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Gemar Nasayao</title>
+</head>
+<body>
+    <div id="app">
+        
+        <header class="border m-2 rounded border-primary border-opacity-25 position-fixed top-0 align-items-center p-3 pb-1 pt-1 pe-5 border-bottom" id="header">
+            <nav class="navbar navbar-expand-lg p-2">
+                <div class="d-flex justify-content-between w-100">
+                    <h1 class="fw-bold text-primary ms-4 fs-1">Gemar Nasayao</h1>
+                    <button class="navbar-toggler" type="button" aria-expanded="true" data-bs-toggle="collapse" data-bs-target="#navbarmenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse ms-3" id="navbarmenu">
+                    <ul class="navbar-nav ms-auto list-unstyled gap-3 ">
+                    <li class="nav-item active"><a href="#Home" class="nav-link text-uppercase fw-bold" :class="{ active: currentSection === 'Home' }">Home</a></li>
+                    <li class="nav-item"><a href="#About" class="nav-link text-uppercase fw-bold" :class="{ active: currentSection === 'About' }">About</a></li>
+                    <li class="nav-item"><a href="#Gallery" class="nav-link text-uppercase fw-bold" :class="{ active: currentSection === 'Gallery' }">Gallery</a></li>
+                    <li class="nav-item"><a href="#Projects" class="nav-link text-uppercase fw-bold" :class="{ active: currentSection === 'Projects' }">Projects</a></li>
+                    <li class="nav-item"><a href="#Blogs" class="nav-link text-uppercase fw-bold" :class="{ active: currentSection === 'Blogs' }">Blogs</a></li>
+                    <li class="nav-item"><a href="#Contact" class="nav-link text-uppercase fw-bold" :class="{ active: currentSection === 'Contact' }">Contacts</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="ms-2 me-2 mb-3 bg-light Home" id="Home">
+            <div class="row d-flex justify-content-evenly align-items-center p-5" id="home">
+                <img src="images/feitan.png" alt="me" class="img-fluid col-12 col-md-6 rounded-circle" id="hero-image" style="width: 480px; height: 480px; object-fit: cover;">
+                <div class="col-12 col-md-5 text-center text-md-start mt-4">
+                    <h2 class="fw-bold text-primary myname">Hello, I'm Gemar Nasayao</h2>
+                    <p class="fs-4 text-muted text-align-justify">A passionate student and a simple developer with a goal of becoming a software developer by creating dynamic and responsive web pages and softwares
+                        . I love turning ideas into reality through code.</p>
+                        <div class="d-flex gap-3">
+                            <button class="btn btn-primary btn-lg">Contact Me</button>
+                            <a href="https://www.facebook.com/gemar.isgemar"><img src="images/facebook.png" alt="facebook" style="max-width: 50px;"></a>
+                            <a href="https://www.instagram.com/gee_maa_rr/?__pwa=1"><img src="images/instagram.png" alt="instagram" style="max-width: 50px;"></a>
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container-fluid p-5 mt-5" id="About" data-aos="zoom-in" data-aos-duration="700">
+            <h2 class="fw-bold text-primary mb-4 text-center aboutMe">About Me</h2>
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="globalShadow mb-3 p-3" id="info">
+                        <p class="fs-4">I am a dedicated developer and student that tend to learn how to be good at coding.
+                            I'm also trying my best to be better everyday by learning something .</p>
+                    </div>
+                    <div class="globalShadow p-3 mb-3">
+                        <h3 class="fw-bold mb-2 text-secondary fs-2">Education</h3>
+                        <ul class="fs-5 list-unstyled">
+                            <li class="fw-bold">PRIMARY</li>
+                            <li>Binodegahan Elementary School(2010-2016)</li>
+                        </ul>
+                        <ul class="fs-5 list-unstyled">
+                            <li class="fw-bold">SECONDARY</li>
+                            <li>Pioduran National High School(2016-2023)</li>
+                        </ul>
+                        <ul class="fs-5 list-unstyled">
+                            <li class="fw-bold">TERTIARY</li>
+                            <li>Southern Luzon Technological College Foundation Pioduran Incorporated(2023-Present)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-4">
+                    <div class="globalShadow mb-3 p-3">
+                        <h3 class="fw-bold mb-2 text-secondary fs-2">Experience</h3>
+                        <ul class="fs-5 list-unstyled">
+                            <li class="fw-bold">IN OUR HOUSE</li>
+                            <li>Dishwasher(2010-Present)</li>
+                        </ul>
+                        <ul class="fs-5 list-unstyled">
+                            <li class="fw-bold">EARTH</li>
+                            <li>Baliw(2005-Present)</li>
+                        </ul>
+                        <ul class="fs-5 list-unstyled">
+                            <li class="fw-bold">PHILIPPINES</li>
+                            <li>Bobo(2005-Present)</li>
+                        </ul>
+                    </div>
+                    <div class="m-3 p-3 d-flex globalShadow">
+                        <div class="row justify-content-center">
+                            <h3 class="text-center fw-bold mb-4 text-secondary fs-2">Technologies</h3>
+                            <img src="images/csharplogo.png" alt="" class="w-25 globalShadow m-2 col-6 img-fluid">
+                            <img src="images/xamllogo.png" alt="" class="w-25 globalShadow m-2 col-6 img-fluid">
+                            <img src="images/htmllogo.png" alt="" class="w-25 globalShadow m-2 col-6 img-fluid">
+                            <img src="images/csslogo.png" alt="" class="w-25 globalShadow m-2 col-6 img-fluid">
+                            <img src="images/javalogo.png" alt="" class="w-25 globalShadow m-2 col-6 img-fluid">
+                            <img src="images/vuelogo.png" alt="" class="w-25 globalShadow m-2 col-6 img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class=" container-fluid card mb-5 p-5 mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="700" id="Skills">
+        <h2 class="fw-bold text-primary mb-4 text-center skillText">Skills</h2>
+        
+        <div class="row g-3">
+            <!-- C# -->
+            <div class="col-md-6">
+            <div class="d-flex globalShadow grr">
+                <div>
+                    <img src="images/csharplogo.png" alt="" class="img-fluid" style="max-width: 65px;">
+                </div>
+                <div class="row w-75">
+                    <h5 class="col-12 fs-4 text-muted">C#</h5>
+                    <div class="progress col-12">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 73%;" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100">73%</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <!-- HTML -->
+            <div class="col-md-6">
+            <div class="d-flex globalShadow grr">
+                <div>
+                    <img src="images/htmllogo.png" alt="" class="img-fluid" style="max-width: 65px;">
+                </div>
+                <div class="row w-75">
+                    <h5 class="col-12 fs-4 text-muted">HTML</h5>
+                    <div class="progress col-12">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">93%</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="col-md-6">
+            <div class="d-flex globalShadow grr">
+                <div>
+                    <img src="images/csslogo.png" alt="" class="img-fluid" style="max-width: 65px;">
+                </div>
+                <div class="row w-75">
+                    <h5 class="col-12 fs-4 text-muted">CSS</h5>
+                    <div class="progress col-12">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Java -->
+            <div class="col-md-6">
+            <div class="d-flex globalShadow grr">
+                <div>
+                    <img src="images/javalogo.png" alt="" class="img-fluid" style="max-width: 65px;">
+                </div>
+                <div class="row w-75">
+                    <h5 class="col-12 fs-4 text-muted">JAVA</h5>
+                    <div class="progress col-12">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Vue -->
+            <div class="col-md-6">
+            <div class="d-flex globalShadow grr">
+                <div>
+                    <img src="images/vuelogo.png" alt="" class="img-fluid" style="max-width: 65px;">
+                </div>
+                <div class="row w-75">
+                    <h5 class="col-12 fs-4 text-muted">VUE</h5>
+                    <div class="progress col-12">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Unity -->
+            <div class="col-md-6">
+            <div class="d-flex globalShadow grr">
+                <div>
+                    <img src="images/unitylogo.png" alt="" class="img-fluid" style="max-width: 65px;">
+                </div>
+                <div class="row w-75">
+                    <h5 class="col-12 fs-4 text-muted">UNITY</h5>
+                    <div class="progress col-12">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Bootstrap -->
+            <div class="col-md-6">
+            <div class="d-flex globalShadow grr">
+                <div>
+                    <img src="images/bootslogo.png" alt="" class="img-fluid" style="max-width: 65px;">
+                </div>
+                <div class="row w-75">
+                    <h5 class="col-12 fs-4 text-muted">BOOTSTRAP</h5>
+                    <div class="progress col-12">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        </section>
+
+        <section class="container container-fluid mb-5 p-5 mt-5 mt-md-0" data-aos="fade-up" data-aos-duration="700" id="Gallery">
+            <h2 class="fw-bold text-primary mb-4 text-center" id="galleryText">Gallery</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="images/gon.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="images/feitan.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="images/kurapika.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="images/killua.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="images/rengoku.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="images/giyuu.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="images/tanjiro.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="images/zenitsu.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid mt-5 p-5 shadow-2" id="Projects" data-aos="fade-up" data-aos-duration="700">
+            <h2 class="text-center text-primary fw-bold" id="projectText">Projects</h2>
+            <div id="projectCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card mx-auto globalShadow project-item">
+                        <img src="images/giyuu.jpg" alt="Saribuhay logo" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title fs-3">Saribuhay App</h2>
+                            <p class="card-text fs-4">- A guide for community about the Philippine Biodiversity and environment</p>
+                            <p class="card-text fs-5">Tech used: C#, .NET MAUI, SQLITE</p>
+                            <a href="" class="btn btn-primary card-btn btn-lg">See Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                <div class="card mx-auto globalShadow project-item">
+                        <img src="images/zenitsu.jpg" alt="Codie logo" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title fs-3">Codie</h2>
+                            <p class="card-text fs-4">A gamified pet virtual assistant for learning programming via lessons & quizzes</p>
+                            <p class="card-text fs-5">Tech used: C#, UNITY, SQLITE</p>
+                            <a href="" class="btn btn-primary card-btn btn-lg">See Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                <div class="card mx-auto globalShadow project-item">
+                        <img src="images/tanjiro.jpg" alt="MultiApp logo" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title fs-3">MultiApp</h2>
+                            <p class="card-text fs-4">A multi purpose app that combines various useful tools in one</p>
+                            <p class="card-text fs-5">Tech used: C#, .NET WPF, SQLITE</p>
+                            <a href="" class="btn btn-primary card-btn btn-lg">See Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            </div>
+        </section>
+
+        <section class="container container-fluid p-5 my-5" id="Blogs">
+            <h2 class="text-center text-primary fw-bold my-3" id="BlogsText">My Blogs</h2>
+            <div class="bg-light container-fluid row g-2 m-2">
+                <div class="col-12 col-lg-4 col-md-6 mt-2">
+                    <div class="card globalShadow card-blog">
+                        <img src="images/programminglaguages.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Popular Programming Languages</h3>
+                            <p class="card-text">Talks about the most popular programming languages right now and its uses</p>
+                        </div>
+                        <div class="d-flex gap-3 text-muted ms-3">
+                            <p>Nov. 14 2025</p>
+                            <p>0 comments</p>
+                        </div>
+                        <a href="" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mt-2">
+                    <div class="card globalShadow card-blog">
+                        <img src="images/ITwithCSandIS.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">IT vs CS vs IS</h3>
+                            <p class="card-text">Differentiating the three different popular tech courses.</p>
+                        </div>
+                        <div class="d-flex gap-3 text-muted ms-3">
+                            <p>Nov. 14 2025</p>
+                            <p>0 comments</p>
+                        </div>
+                        <a href="" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mt-2">
+                    <div class="card globalShadow card-blog">
+                        <img src="images/techstacks.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Languages Common Tech Stacks</h3>
+                            <p class="card-text">The various tech stacks involved in each popular programming languages in this moderd era.</p>
+                            
+                        </div>
+                        <div class="d-flex gap-3 text-muted ms-3">
+                            <p>Nov. 14 2025</p>
+                            <p>0 comments</p>
+                        </div>
+                        <a href="" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="" class="btn btn-primary btn-lg mt-5 w-25">See All</a>
+            </div>
+        </section>
+
+        <section class="container container-fluid p-5 my-5" id="Contact" data-aos="fade-up" data-aos-duration="700">
+            <h2 class="text-center text-primary fw-bold" id="ContactText">Contact Me</h2>
+            <div class="row mt-3">
+                <div class="col-12 col-md-6 mb-4">
+                    <h3 class="fw-bold text-secondary">My Information</h3>
+                    <p class="fs-4 text-secondary">Don't be scared to reach out and have a friendly conversation with me regarding your desired projects</p>
+                    
+                    <div class="mb-2 d-flex globalShadow">
+                        <div class="align-content-center div-contact">
+                            <img src="images/phone-call.png" alt="phone-call" class="img-fluid" style="max-width: 50px;">
+                        </div>
+                        <div class="col-6 row w-75 div-flex pt-3 div-infotext">
+                            <h3 class="text-secondary fw-bold fs-4">Phone</h3>
+                            <p class="text-muted fs-5">+639355004203</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-2 d-flex globalShadow">
+                        <div class="align-content-center div-contact">
+                            <img src="images/facebook.png" alt="facebook" class="img-fluid" style="max-width: 50px;">
+                        </div>
+                        <div class="col-6 row w-75 div-flex pt-3 div-infotext">
+                            <h3 class="text-secondary fw-bold fs-4">Facebook</h3>
+                            <p class="text-muted fs-5">Gemar Carizo Nasayao</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-2 d-flex globalShadow">
+                        <div class="align-content-center div-contact">
+                            <img src="images/gmail.png" alt="gmail" class="img-fluid" style="max-width: 50px;">
+                        </div>
+                        <div class="col-6 row w-75 div-flex pt-3 div-infotext">
+                            <h3 class="text-secondary fw-bold fs-4">Email</h3>
+                            <p class="text-muted fs-5">nasayaogemar16@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-2 d-flex globalShadow">
+                        <div class="align-content-center div-contact">
+                            <img src="images/location.png" alt="location" class="img-fluid" style="max-width: 50px;">
+                        </div>
+                        <div class="col-6 row w-75 div-flex pt-3 div-infotext">
+                            <h3 class="text-secondary fw-bold fs-4">Location</h3>
+                            <p class="text-muted fs-5">Binodegahan, PioDuran, Albay</p>
+                        </div>
+                    </div>
+
+                </div>
+                <form action="" method="post" class="contactForm col-12 col-md-6 mt-3">
+                    <h3 class="fw-bold text-secondary my-3">Send me a Message</h3>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" id="name" class="form-control shadow-2" placeholder="Enter your name" required>
+                                <label for="Username">Username</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="email" id="email" class="form-control shadow-2" placeholder="Enter your Email" required>
+                                <label for="Email">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" id="subject" class="form-control shadow-2" placeholder="Enter your Subject" required>
+                                <label for="Subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="form-floating">
+                                <textarea class="form-control textarea shadow-2" id="message" placeholder="Your Message"></textarea>
+                                <label for="Username">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary p-3">Send a Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="bg-dark">
+            <div class="p-3 text-white">
+                <div class="container-fluid row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <h3 class="fw-bold fs-1">Gemar Nasayao</h3>
+                        <p class="fs-5">Simple and Dreamer </p>
+                        <div class="d-flex gap-3">
+                            <a href="https://www.facebook.com/gemar.isgemar"><img src="images/facebook.png" alt="facebook log" style="max-width: 40px;"></a>
+                            <a href="https://www.instagram.com/gee_maa_rr/?__pwa=1"><img src="images/instagram.png" alt="instagram logo" style="max-width: 40px;"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <a href="#Home"><li>Home</li></a>
+                            <a href="#About"><li>About</li></a>
+                            <a href="#Gallery"><li>Gallery</li></a>
+                            <a href="#Projects"><li>Projects</li></a>
+                            <a href="#Blogs"><li>Blogs</li></a>
+                            <a href="#Contacts"><li>Contacts</li></a>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <h4>Services</h4>
+                        <ul class="list-unstyled">
+                            <li>Software Development</li>
+                            <li>Web Development</li>
+                            <li>Graphics Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="container-fluid text-center p-0">
+                    <p class="fs-5">&copy; 2024 Gemar Nasayao. All rights reserved.</p>
+                    <p>Made with Vue and Bootstrap</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- script -->
+     <script src="js/vue.global.js"></script>
+     <script src="js/app.vue.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
