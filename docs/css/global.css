@@ -56,6 +56,9 @@
         object-fit: cover;
     }
 }
+.navbar-toggler{
+        border: none !important;
+    }
 .globalShadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
@@ -142,5 +145,36 @@ a:hover{
         p{
             font-size: 1rem !important;
         }
+    }
+}
+@media(max-width:470px){
+    #hero-image{
+        max-width: 320px;
+        max-height: 320px;
+    }
+    #introname{
+        font-size: 1.6rem !important;
+    }
+    .navbar-toggler{
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+@media(max-width:420px){
+    #hero-image{
+        max-width: 300px;
+        max-height: 300px;
+        margin: auto;
+    }
+    #introname{
+        font-size: 1.5rem !important;
+    }
+    #skill-image{
+        max-width: 60px !important;
+        max-height: 60px !important;
+    }
+    .navbar-toggler{
+        width: 33px !important;
+        height: 33px !important;
     }
 }
